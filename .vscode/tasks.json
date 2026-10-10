@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "1. Build Mini-C Compiler",
+      "type": "shell",
+      "command": "make",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "2. Start Backend API Server (Port 3001)",
+      "type": "shell",
+      "command": "npm --prefix server start",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "3. Start Frontend Web IDE (Port 5173)",
+      "type": "shell",
+      "command": "npm --prefix web run dev",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}

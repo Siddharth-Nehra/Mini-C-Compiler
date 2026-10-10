@@ -1,0 +1,13 @@
+{
+  "name": "mini-c-compiler-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mini-C Compiler Web IDE & C11 Execution Engine",
+  "scripts": {
+    "build:compiler": "make",
+    "test:compiler": "make test",
+    "start:server": "npm --prefix server start",
+    "start:web": "npm --prefix web run dev",
+    "dev": "npm run build:compiler && npm run start:server"
+  }
+}

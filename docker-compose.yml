@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  minic-studio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: minic-studio-app
+    restart: always
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - NODE_ENV=production
+      - JWT_SECRET=minic-studio-super-secret-key-change-this
